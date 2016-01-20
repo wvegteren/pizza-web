@@ -1,0 +1,59 @@
+div {
+    transition: width 2s;
+    -moz-transition: width 2s;
+    -webkit-transition: width 2s;
+
+    width: 100px;
+    height: 100px;
+    background: #BADA55;
+}
+
+div:hover {
+    width: 200px;
+}
+
+.linear {
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+}
+
+.ease {
+    transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+.cubic-bezier {
+    transition-timing-function: cubic-bezier(0.03, 0.5, 1, -0.4);
+    -moz-transition-timing-function: cubic-bezier(0.03, 0.5, 1, -0.4);
+    -webkit-transition-timing-function: cubic-bezier(0.03, 0.5, 1, -0.4);
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    margin: 50px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,25 @@
+
+@mixin rounded-corners() {
+  $radius: 10px;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin shadow() {
+  $color: rgba(3, 3, 3, 0.5);
+  -webkit-box-shadow: $color 2px 2px 3px;
+  -moz-box-shadow: $color 2px 2px 3px;
+  box-shadow: $color 2px 2px 3px;
+}
+
+.message {
+  @include rounded-corners;
+  @include shadow();
+  width: 80%;
+  color: #333;
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 5px 10% 10px 10%;
+}

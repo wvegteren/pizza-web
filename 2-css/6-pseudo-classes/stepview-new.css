@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+}
+
+div.stepView {
+    margin: 0 0 0 50px;
+    position: relative;
+}
+
+.stepView {
+    margin: 0 0 40px 0;
+    position: relative;
+}
+
+.stepView ul {
+    overflow: hidden;
+    height: 32px;
+    list-style: none;
+    background: url(bgStep.gif) no-repeat left -105px;
+    z-index: 1000;
+    padding: 0 0 0 2px;
+}
+
+.stepView li {
+    float: left;
+    position: relative;
+    margin: 0 -25px 0 0;
+    padding: 6px 30px 6px 25px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #a9a9a9;
+    background: url(bgStep.gif) no-repeat right 0;
+}
+
+.stepView li:first-child {
+    padding-left: 10px;
+}
+
+.stepView li.active:first-child {
+    border-radius: 4px;
+    margin-left: -2px;
+}
+
+.stepView li.active {
+    color: #000;
+    background: url(bgStep.gif) no-repeat right -35px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.stepView li.visited {
+    color: #2e9a76;
+    background: url(bgStep.gif) no-repeat right -70px;
+}
+
+.stepView li:first-child  {z-index: 990;}
+.stepView li:nth-child(2) {z-index: 980;}
+.stepView li:nth-child(3) {z-index: 970;}
+.stepView li:nth-child(4) {z-index: 960;}
+.stepView li:nth-child(5) {z-index: 950;}
+.stepView li:nth-child(6) {z-index: 940;}
+

@@ -1,0 +1,29 @@
+
+html {
+    font-size: 14px;
+    font-family: Calibri, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.em-demo {
+    font-size: 1.5em;
+}
+
+.rem-demo {
+    font-size: 1.5rem;
+}
+
+.vw-demo {
+    font-size:5vw;
+}
+
+.vmin-demo {
+    font-size: 5vmin;
+}
+
+.vmax-demo {
+    font-size: 5vmax;
+}

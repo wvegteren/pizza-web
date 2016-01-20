@@ -1,0 +1,26 @@
+/* Q 1 */
+span#sid { color: red; }
+#pid span { color: green; }
+
+/* Q 2 */
+/*#pid #sid { color: red; }*/
+/*p.pclass span#sid.sclass { color: green; }*/
+
+/* Q 3 */
+/*#pid { color: red !important; }*/
+/*span { color: green; }*/
+
+/* Q 4 */
+/*#pid { color: blue; font-size: 10px; }*/
+/*#pid span { color: red !important;}*/
+/*p #sid { color: green; font-size: 150%; }*/
+
+
+
+
+div            {...}  /* a=0 b=0 c=1 -> specificity =   1 */
+ul li          {...}  /* a=0 b=0 c=2 -> specificity =   2 */
+ul ol li       {...}  /* a=0 b=0 c=3 -> specificity =   3 */
+ul ol li.red   {...}  /* a=0 b=1 c=3 -> specificity =  13 */
+div.stepview   {...}  /* a=0 b=1 c=1 -> specificity =  11 */
+#navigation    {...}  /* a=1 b=0 c=0 -> specificity = 100 */

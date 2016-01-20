@@ -1,0 +1,75 @@
+
+/*********************************
+ *  import + extend
+ *********************************/
+
+@import 'message';
+
+.success {
+  @extend .message;
+  color: green;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  color: red;
+  border-color: red;
+}
+
+
+/*********************************
+ *  mixin + math + variables
+ *********************************/
+$max_columns: 4;
+
+@mixin column($num_columns, $max_columns) {
+  @include rounded-corners;
+  $one_column: 100% / $max_columns;
+  width: $one_column * $num_columns;
+  margin: 0;
+  border: 1px solid #ccc;
+  padding:5px;
+  float:left;
+  box-sizing:border-box;
+  background-clip:padding-box !important;
+}
+
+@media screen and (min-width: 700px) {
+
+  .column_1 {
+    @include column(1, $max_columns);
+  }
+  .column_2 {
+    @include column(2, $max_columns);
+  }
+  .column_3 {
+    @include column(3, $max_columns);
+  }
+  .column_4 {
+    @include column(4, $max_columns);
+  }
+
+}
+@media screen and (max-width: 700px) {
+
+  .column_1 {
+    @include column(2, $max_columns);
+  }
+  .column_2 {
+    @include column(4, $max_columns);
+  }
+  .column_3 {
+    @include column(4, $max_columns);
+  }
+  .column_4 {
+    @include column(4, $max_columns);
+  }
+
+}
+
+body {
+  margin: 0;
+}
+
+

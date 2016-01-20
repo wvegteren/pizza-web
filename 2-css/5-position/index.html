@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positions</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+
+    <div class="static">
+        This div element has position <mark>'static'</mark>.<br>
+        Elements with a static position are always positioned according to the normal flow of the page.<br><br>
+        Note: static positioned elements will <mark>NOT</mark> been seen as <mark>a 'positioned' element</mark>x§ (ie. for absolute positions).
+    </div>
+
+    <div class="relative">
+        This div element has position <mark>'relative'</mark>.
+        By setting the top, right, bottom, and left properties
+        it will be adjusted away from its normal position.
+
+        <div class="absolute">
+            This div element has position <mark>'absolute'</mark>.
+            It is positioned relative to the nearest positioned ancestor.
+        </div>
+    </div>
+
+    <div class="fixed">
+        This div element has position <mark>'fixed'</mark>.
+        It is positioned relative to the viewport, which means it always stays
+        in the same place even if the page is scrolled.
+    </div>
+
+    <p>Some text here ...</p>
+
+    <div class="static">
+        This is another <mark>static</mark> positioned div.
+    </div>
+
+    <p>Some text here ...</p>
+    <p>Some text here ...</p>
+    <p>Some text here ...</p>
+
+</body>
+</html>

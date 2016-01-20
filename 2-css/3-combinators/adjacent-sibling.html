@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adjacent Sibling Combinator</title>
+
+    <style>
+        div + p {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h6>Adjacent Sibling Combinator: div + p</h6>
+
+    <div>
+        <p>Paragraph 1 inside the div.</p>
+        <p>Paragraph 2 inside the div.</p>
+        <span><p>Paragraph 3 wrapped in a span inside the div.</p></span>
+    </div>
+
+    <p>Paragraph 4. Not in the div.</p>
+    <p>Paragraph 5. Not in the div.</p>
+    
+</body>
+</html>

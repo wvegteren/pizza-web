@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+}
+
+.stepView {
+    padding: 0 0 10px 0;
+    position: relative
+}
+
+.stepView ul {
+    overflow: hidden;
+    height: 32px
+}
+
+.stepView li {
+    float: left;
+    margin: 0 -25px 0 0;
+    color: #a9a9a9
+}
+
+.stepView li span {
+    float: left;
+    line-height: 20px;
+    background: url(bgStep.gif) no-repeat right 0;
+    position: relative;
+    z-index: 11
+}
+
+.stepView li strong {
+    float: left;
+    padding: 6px 30px 6px 25px;
+    font-weight: normal
+}
+
+.stepView li span.firstItem {
+    z-index: 20;
+    color: #2e9a76;
+    background: url(bgStep.gif) no-repeat right -70px
+}
+
+.stepView li span.firstItem strong {
+    padding: 6px 30px 6px 10px;
+    background: url(bgStep.gif) no-repeat left -105px
+}
+
+.stepView li span.visitedItem {
+    color: #2e9a76;
+    background: url(bgStep.gif) no-repeat right -70px
+}
+
+.stepView li span.visitedItem strong {
+    padding: 6px 30px 6px 10px;
+    background: url(bgStep.gif) no-repeat right -70px
+}
+
+.stepView li.visitedItem {
+    color: #2e9a76;
+    padding: 6px 30px 6px 10px;
+    background: url(bgStep.gif) no-repeat right -70px
+}
+
+.stepView li.activeItem {
+}
+
+.stepView li.activeItem span {
+    background: url(bgStep.gif) no-repeat right -35px
+}
+
+.stepView li.activeItem span strong {
+    background: url(bgStep.gif) no-repeat left -140px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000
+}

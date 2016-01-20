@@ -1,0 +1,97 @@
+
+.rounded-fill {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background: #BADA55;
+}
+
+.rounded-border {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 3px solid #BADA55;
+}
+
+
+.multiple-radius-fill {
+    border-radius: 5px 20px 5px 20px;
+    -moz-border-radius: 5px 20px 5px 20px;
+    -webkit-border-radius: 5px 20px 5px 20px;
+    background: #BADA55;
+}
+
+.multiple-radius-border {
+    border-radius: 5px 25px 45px 65px;
+    -moz-border-radius: 5px 25px 45px 65px;
+    -webkit-border-radius: 5px 25px 45px 65px;
+    border: 3px solid #BADA55;
+}
+
+
+.divided-less-than-one {
+    border-radius: 10px/30px; /* horizontal radius / vertical radius */
+    -moz-border-radius: 10px/30px;
+    -webkit-border-radius: 10px/30px;
+    background: #BADA55;
+}
+
+.divided-greater-than-one {
+    border-radius: 30px/10px; /* horizontal radius / vertical radius */
+    -moz-border-radius: 30px/10px;
+    -webkit-border-radius: 30px/10px;
+    border: 3px solid #BADA55;
+}
+
+.round-fill {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #BADA55;
+}
+
+.round-border {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 3px solid #BADA55;
+}
+
+.round-photo {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-image: url("bean.png");
+    border: 5px solid #BADA55;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    margin: 50px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+img {
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+h1, h3, p {
+    clear: both;
+}
+

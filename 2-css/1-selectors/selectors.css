@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One); /* Poiret One */
+
+body {
+    font-family: Calibri, sans-serif;
+    color: #666;
+}
+
+header {
+    font-family: 'Poiret One', cursive;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#jumbo {
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    margin: 20px 0;
+    background-color: #eeeeee;
+}
+
+.marking {
+    font-style: italic;
+    font-weight: bold;
+    color: darkblue;
+}
+

@@ -1,0 +1,64 @@
+
+.linear-to-right {
+    background: #1d6493; /* fallback for old browsers */
+    background: -moz-linear-gradient(left, #1d6493, #5faf9f);
+    background: -webkit-linear-gradient(left, #1d6493, #5faf9f);
+    background: linear-gradient(to right, #1d6493, #5faf9f);
+}
+
+.linear-to-right-3-colors {
+    background: -moz-linear-gradient(left, #2ce0cb 5%, #1d6493 30%, #5faf9f 80%);
+    background: -webkit-linear-gradient(left, #2ce0cb 5%,#1d6493 30%,#5faf9f 80%);
+    background: linear-gradient(to right, #2ce0cb 5%,#1d6493 30%,#5faf9f 80%);
+}
+
+.linear-to-bottom-right {
+    background: -moz-linear-gradient(135deg, #1d6493, #5faf9f);
+    background: -webkit-linear-gradient(135deg, #1d6493, #5faf9f);
+    background: linear-gradient(to bottom right, #1d6493, #5faf9f);
+}
+
+.radial {
+    background: -webkit-radial-gradient(#1d6493, #5faf9f);
+    background: -moz-radial-gradient(#1d6493, #5faf9f);
+    background: radial-gradient(#1d6493, #5faf9f);
+}
+
+.img-background {
+    height: 800px;
+    background: url("office-building.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.linear-overlay {
+    background: -moz-linear-gradient(left, #1d6493, #5faf9f);
+    background: -webkit-linear-gradient(left, #1d6493, #5faf9f);
+    background: linear-gradient(to right, #1d6493, #5faf9f);
+    opacity: .85;
+    height: 100%;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    margin: 50px;
+}
+
+div {
+    height: 150px;
+    width: 100%;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+h1, h3, p {
+    clear: both;
+}
